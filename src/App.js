@@ -9,14 +9,15 @@ function App() {
   return (
     <Router>
     <div className="app">
-      <Switch>
+      <Header/>
+      <Switch>   
         {/* default route(homepage route) : whether you hit / or /abc*/}
         <Route path="/">
-          <Header/>
+          
           <Home/>
         </Route>
         <Route path="/checkout">
-          <Header/>
+         
           <Checkout/>
         </Route>
       </Switch>
