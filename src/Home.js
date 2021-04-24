@@ -52,7 +52,6 @@ function Home() {
                     />
                 </div>
                 <div className="home__row" >
-                    
                     <Product
                         id="98829332"
                         title="Samsung LC49RG98SSUXEN 49' Curved 
