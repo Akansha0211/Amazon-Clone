@@ -11,15 +11,14 @@ function App() {
     <div className="app">
       <Header/>
       <Switch>   
-        {/* default route(homepage route) : whether you hit / or /abc*/}
-        <Route path="/">
-          
-          <Home/>
-        </Route>
-        <Route path="/checkout">
-         
+        <Route exact path="/checkout">    
           <Checkout/>
         </Route>
+        {/* default route(homepage route) : whether you hit / or /abc*/}
+        <Route path="/">   
+          <Home/>
+        </Route>
+        
       </Switch>
     </div>
     </Router>
