@@ -3,6 +3,9 @@ import './Product.css'
 import StarIcon from '@material-ui/icons/Star';
 
 function Product({id, title, image, price, rating}) {
+    const addToBasket = ()=>{
+        //dispatch some action itn the datalayer
+    }
     return (
         <div className="product">
             <div className="product__info">
@@ -18,7 +21,7 @@ function Product({id, title, image, price, rating}) {
                 </div>       
             </div>
             <img src={image}></img>
-            <button>Add to basket</button>
+            <button onClick={addToBasket} >Add to basket</button>
         </div>
     )
 }
