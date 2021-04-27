@@ -22,3 +22,21 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Firebase
+
+### `User Authentication`
+
+Go to Firebase console : https://console.firebase.google.com/u/0/
+Now create a new project and copy the configuration code from in there to your project in file firebase.js
+\
+Then intialize the app using :
+const firebaseApp = firebase.initializeApp(firebaseConfig)
+\
+Also Intialize the db and auth similarly:
+const db = firebaseApp.firestore()
+
+const auth = firebase.auth()
+
+\export the db and auth to use it outside of the firestore
+export{db,auth}
