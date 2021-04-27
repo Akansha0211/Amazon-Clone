@@ -25,7 +25,7 @@ function Header() {
                 <SearchIcon className="header__searchIcon" ></SearchIcon>
             </div>
             <div className="header__nav">
-                <Link to="/login">
+                <Link to={ !user && "/login"}>
                 <div onClick={handleAuthentication} className="header__option">
                      <span className="header__optionLineOne">Hello Guest</span>
                      {/* if the user exists it will say 'sign Out' otherwise it will say sign In */}
