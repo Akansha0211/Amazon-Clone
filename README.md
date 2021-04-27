@@ -1,4 +1,5 @@
-LIVE PROJECT :
+## `LIVE PROJECT :`
+
 https://challenge-9a753.web.app
 
 ## To get started with React project
@@ -49,7 +50,7 @@ Now create a new project and copy the configuration code from in there to your p
 
 ### export{db,auth}
 
-### 'Deploying the app`
+### `Deploying the app`
 
 In the cmd prompt
 
