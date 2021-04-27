@@ -1,3 +1,6 @@
+LIVE PROJECT :
+https://challenge-9a753.web.app
+
 ## To get started with React project
 
 ### npx create-react-app amazon-clone
@@ -29,14 +32,34 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 Go to Firebase console : https://console.firebase.google.com/u/0/
 Now create a new project and copy the configuration code from in there to your project in file firebase.js
-\
-Then intialize the app using :
-const firebaseApp = firebase.initializeApp(firebaseConfig)
-\
-Also Intialize the db and auth similarly:
-const db = firebaseApp.firestore()
 
-const auth = firebase.auth()
+### npm install firebase
 
-\export the db and auth to use it outside of the firestore
-export{db,auth}
+### Then intialize the app using :
+
+### `const firebaseApp = firebase.initializeApp(firebaseConfig)`
+
+### Also Intialize the db and auth similarly:
+
+### `const db = firebaseApp.firestore()`
+
+### `const auth = firebase.auth()`
+
+### export the db and auth to use it outside of the firestore
+
+### export{db,auth}
+
+### 'Deploying the app`
+
+In the cmd prompt
+
+### npm i -g firebase-tools
+
+firebase login\
+firebase init : (use arraow keys in cmd prompt and select -->) Hosting : Configure and deploy Firebase Hosting sites
+
+### npm run build
+
+The above cmd will create an optimized production build
+
+### firebase deploy
